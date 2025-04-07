@@ -7,10 +7,6 @@ This Streamlit application provides a user-friendly interface for uploading, exe
 *   **Script Upload:** Easily upload your Python RPA scripts directly through the web interface.
 *   **Script Viewing:** Inspect the uploaded script content with an expandable code viewer.
 *   **Execution Control:** Start and stop script execution with intuitive buttons.
-*   **Real-time Logging:** Monitor script execution progress with real-time log updates displayed in a dedicated section.
-*   **Execution Status:** Track the script's status (Running, Completed, Failed, Stopped) with clear visual indicators.
-*   **Results Presentation:** View script execution results in a structured format (text, JSON, or general output).
-*   **Clean UI:** A clean and organized user interface with consistent layouts and visual cues.
 
 ## Prerequisites
 
@@ -23,60 +19,6 @@ This Streamlit application provides a user-friendly interface for uploading, exe
     ```bash
     pip install -r requirements.txt
     ```
-
-## Setup and Installation
-
-1.  **Clone the Repository (if applicable):** If you obtained the code from a Git repository, clone it to your local machine:
-
-    ```bash
-    git clone <repository_url>
-    cd <repository_directory>
-    ```
-
-2.  **Create a Virtual Environment (recommended):** Create a virtual environment to isolate the project dependencies:
-
-    ```bash
-    python -m venv myenv
-    ```
-
-    Activate the virtual environment:
-
-    *   **Windows:**
-
-        ```bash
-        myenv\Scripts\activate
-        ```
-
-    *   **macOS/Linux:**
-
-        ```bash
-        source myenv/bin/activate
-        ```
-
-3.  **Install Dependencies:** Install the required Python packages using pip:
-
-    ```bash
-    pip install streamlit
-    # If your RPA scripts require other libraries, install them here as well
-    # For example: pip install selenium beautifulsoup4
-    ```
-
-4.  **Place Your `utils.py` file.**  The `utils.py` file is assumed to be present and contain the functions to execute and log your rpa script.
-
-## Running the Application
-
-1.  **Navigate to the project directory** from your terminal or command prompt.
-
-2.  **Run the Streamlit application:**
-
-    ```bash
-    streamlit run your_script_name.py
-    ```
-
-    Replace `your_script_name.py` with the actual name of your Streamlit script file.
-
-3.  **Access the application:** Streamlit will automatically open the application in your web browser. If it doesn't, you can access it by navigating to the URL provided in the terminal (usually `http://localhost:8501`).
-
 ## Usage
 
 1.  **Upload Script:** In the sidebar, click the "Browse files" button to upload a Python RPA script from your local machine.
